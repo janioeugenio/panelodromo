@@ -1,0 +1,218 @@
+/* Banner com a imagem de imperatriz */ 
+.banner{
+	height: 25rem;
+	background: url("../img/banner-itz1.jpg") no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 5px 12px var(--titulo);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+/* Seção sobre imagem, texto e botão */
+.sobre{
+	margin:0 4rem 10rem 4rem;
+}
+
+.img-sobre{
+	height: 30%;
+	width: 40%;
+	margin:4em 4em 0.5em 0;
+	float: left;
+}
+
+.img-sobre img{
+	height: 100%;
+	width: 100%;
+	
+	box-shadow: 0 0 3px var(--preto);
+}
+
+.texto-sobre{
+    width: 100%;
+}
+
+h2{
+	margin: 4rem;
+	padding-top: 4rem;
+}
+
+.texto-sobre p {
+	text-align: justify;
+	color: var(--cinza);
+    font-family: 'Lato',sans-serif;
+    font-size: 1.2rem;
+   	line-height: 1.5em;
+}
+
+
+.botao {
+	width: 6rem;
+	display: inline-block;
+	align-items: center;
+}
+
+/* Seção cardapio texto e imagem */
+
+.cardapio{
+
+	margin:0 4rem 10rem 4rem;
+	text-align: center;
+	clear: left;
+}
+
+.cardapio li img{
+	width: 15rem;
+	height: 15rem;
+	border-radius: 10px;
+}
+
+.cardapio li img:hover {
+	box-shadow: 0px 0px 5px var(--primaria);
+}
+
+.cardapio li {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin: 1% 1%;
+}
+
+.cardapio li:hover {
+	border-color: var(--primaria);
+	box-shadow: 0px 0px 5px #C78C1909;
+}
+
+
+.cardapio li h3 {
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--cinza);
+    font-family: 'Lato',sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+	margin-bottom: 10px;
+}
+
+/* Seção de avaliação imagem, nome e texto */
+
+.availacao{
+	margin: 2rem;
+	text-align: center;
+}
+
+.availacao li {
+	display: inline-block;
+	text-align: center;
+	width: 15%;
+	vertical-align: top;
+	padding: 3rem 2rem;
+}
+
+.availacao li p {
+	text-align: center;
+	color: var(--cinza);
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.availacao li h3 {
+	text-align: center;
+	color: #091e42;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.availacao li img{
+	width: 6rem;
+	height: 6rem;
+
+}
+.img-avaiacao:hover {
+	box-shadow: 0px 0px 0px var(--primaria);
+	transform: scale(1);
+	transition: 0s all;
+}
+
+/*adptação para tablet*/
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	.sobre{
+		margin: 0 4rem 4rem 4rem;
+	}
+
+	.img-sobre{
+		width: 100%;
+		float: none;
+	}
+
+	h2{
+		margin: auto auto ;
+		padding: 2rem;
+	}
+
+	.espaco-botao {
+		/*Flexbox*/
+		display: flex;
+		justify-content: center;
+
+		width: 100%;
+		margin: auto;
+	}
+
+	.cardapio li h3{
+		padding: 3rem;
+	}
+
+	.cardapio li img {
+		width: 25rem;
+		height: 25rem;
+		border-radius: 10px;
+	}
+
+	.availacao li {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+/*adptação para mobile*/
+
+@media screen and (max-width: 480px){
+
+	/* Adaptação Sobre mobile */
+	.sobre, .img-sobre{
+		width: 100%;
+		margin: 0 0 4rem 0px;
+	}
+
+	.texto-sobre{
+		width: 100%;
+		padding: 0;
+	}
+
+	.texto-sobre p {
+		margin: 0 2rem;
+	}
+
+	.espaco-botao {
+		/*Flexbox*/
+		display: flex;
+		justify-content: center;
+
+		width: 100%;
+		margin: auto;
+		
+	}
+	/* Adaptação Avaliação mobile */
+	.availacao ul li{
+		display: block;
+		width: auto;
+
+	}
+
+	h2{
+		margin: 0 0 2rem 0;
+		padding: 0;
+	}
+
+}

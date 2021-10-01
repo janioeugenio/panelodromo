@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<!--Titulo do site-->
+		<title>Contato - PanelodromoITZ</title>
+		<!--Importação de CSS-->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/contato.css">
+		<link rel="shortcut icon" href="img/logo-head.png">
+	</head>
+	<body>
+		<header>
+			<!-- Barra de Menu -->
+			<div class="menu">
+				<img class="logo" src="img/logo.png" alt="logo do PanelodromoITZ">
+				<h1>Panelodromo ITZ</h1>
+
+				
+				<nav>
+					<!-- As barras do menu mobile -->
+					<div class="menu-mobile" data-menu-mobile >
+						<div class="linha1"></div>
+						<div class="linha2"></div>
+						<div class="linha3"></div>
+					</div>
+
+					<!-- Menu -->
+					<ul class="link-menu" data-link-menu >
+						<li><a href="index.html">Início</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="cardapio.html">Cardápio</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+		<main>
+			<!--Parte azul onde fala o endereço o Horário de funcionamento e as opções de serviço-->
+			<section class="endereco-contato">
+				<address>
+					<p><strong>Endereço:</strong></br> Praça Tiradentes - Centro </br> CEP 65907-190</br> Imperatriz-ma</p>
+					<p><strong>Horario:</strong></br>Aberto 24 horas</br>Segunda a segunda</p>
+					<p><strong>Opções de serviço:</strong></br> Refeição no local </br> Para viagem</p>
+				</address>
+				
+			</section>
+
+			<!--Seção do formulário de contato -->
+			<section class="contato">
+				<!--A parte do action jora para a pagina, caso aprovado-->
+				<form action="contato-enviado.html" class="formulario" data-formulario>
+					<label for="contato-nome" >Nome</label >
+					<input type="text" id="contato-nome" class="input-form" required placeholder="Escreva seu nome completo" minlength="10">
+
+					<label for="contato-email">Email</label> 
+					<input type="email" id="contato-email" class="input-form" required placeholder="escreva seu email aqui">
+
+					<label for="contato-fone">Telefone</label>
+					<input type="tel" id="contato-fone" class="input-form" placeholder="escreva o número do seu telefone com DDD">
+
+					<!--Parte de escolher o gral de satisfação de 1-10-->
+					<fieldset class="satisfacao">
+						<legend>Escolha de 1 a 10 seu grau de satisfação</legend>
+						<label for="1">1</label>
+						<input type="radio" name="grau-satisfacao" value="1" id="1" >
+						<label for="2">2</label>
+						<input type="radio" name="grau-satisfacao" value="2" id="2" >
+						<label for="3">3</label>
+						<input type="radio" name="grau-satisfacao" value="3" id="3" >
+						<label for="4">4</label>
+						<input type="radio" name="grau-satisfacao" value="4" id="4" >
+						<label for="5">5</label>
+						<input type="radio" name="grau-satisfacao" value="5" id="5" >
+						<label for="6">6</label>
+						<input type="radio" name="grau-satisfacao" value="6" id="6" >
+						<label for="7">7</label>
+						<input type="radio" name="grau-satisfacao" value="7" id="7" >
+						<label for="8">8</label>
+						<input type="radio" name="grau-satisfacao" value="8" id="8" >
+						<label for="9">9</label>
+						<input type="radio" name="grau-satisfacao" value="9" id="9" >
+						<label for="10">10</label>
+						<input type="radio" name="grau-satisfacao" value="10" id="10" >
+					</fieldset>
+
+					<fieldset>
+
+						<legend>Deseja direcionar a mensagem para um box específco ?</legend>
+						<!--Aba para escolher o box específco-->
+						<select>						
+							<option>Não</option>
+							<option>BOX 1</option>
+							<option>BOX 2</option>
+							<option>BOX 3</option>
+							<option>BOX 4</option>
+							<option>BOX 5</option>
+							<option>BOX 6</option>
+							<option>BOX 7</option>
+							<option>BOX 8</option>
+							<option>BOX 9</option>
+							<option>BOX 10</option>
+							<option>BOX 11</option>
+							<option>BOX 12</option>
+							<option>BOX 13</option>
+							<option>BOX 14</option>
+							<option>BOX 15</option>
+							<option>BOX 16</option>
+							<option>BOX 17</option>
+							<option>BOX 18</option>
+							<option>BOX 19</option>
+							<option>BOX 20</option>
+						</select>
+
+					</fieldset>
+
+
+					<label for="contato-texto">Digite sua sugestão</label>
+					<textarea cols="50" rows="5" id="contato-texto" class="input-form" minlength="10" maxlength="200" title="Seu texto deve ter entre 10 e 200 caracteres" required></textarea>
+
+					<input type="submit" class="botao" value="Enviar" data-botao-contato>
+				</form>
+
+		
+			</section>
+
+		</main>
+
+	</main>
+
+	<footer>
+		<!-- Informações do whatsapp -->
+		<section class="informacoes-footer">
+		<div class="footer-fale-conosco">
+			<a class="telefone-contato" href="https://api.whatsapp.com/send?phone=5599984213456&text=Ol%C3%A1%20Vim%20do%20site%20PanelodromoITZ" target="_blank">
+				<img class="logo" src="img/whatsapp.png" alt="icone do whatsapp">
+				<p>Fale com a gente</p>
+				<h3>(99) 9 8421-3456</h3>
+			</a>
+		</div>
+		
+		<!-- Logo mais nome  -->
+		<div class="footer-logo">
+			<img class="logo" src="img/logo.png" alt="logo do PanelodromoITZ">
+			<h3>Panelodromo Imperatriz</h3>
+		</div>
+
+		<!-- Link das redes sociais -->
+		<div class="footer-siganos">
+			<p>Siga-nos</p>
+			<a href="https://twitter.com" target="_blank"><img class="logo" src="img/twitter.png" alt="icone do twitter"></a>
+			<a href="https://facebook.com.br" target="_blank"><img class="logo" src="img/facebook.png" alt="icone do facebook"></a> 
+			<a href="https://instagram.com.br" target="_blank"><img class="logo" src="img/instagram.png" alt="icone do instagram"></a>
+		</div>
+		</section>
+
+		<!--Barra de Copyright-->
+		<p class="copyright">&copy; Feito Orgulhasamente por Jânio Eugênio</p>	
+	</footer>
+
+	<!--Importação do Javascript-->
+	<script type="text/javascript" src="js/style.js"></script>
+</body>
+
+</html>
