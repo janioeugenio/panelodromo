@@ -1,0 +1,323 @@
+:root{
+	--braco: #ffffff;
+	--preto: #000000;
+	--primaria: #09519e;
+	--primaria-escuro: #091e42;
+	--bege:oldlace;	
+	--titulo: #838b9e;
+	--footer:#2b2b2b;
+}
+
+/* CSS dos itens globais do site */
+header {
+	background: var(--primaria);
+	padding: 0.4rem 0;
+	box-shadow: 0 0 5px var(--preto);
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.menu{
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 5em;
+	height: 5em;
+	text-align: left;
+}
+
+.menu h1{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 2rem;
+    margin: 0 auto;
+	color: var(--braco);
+
+	font-family: 'Work Sans',sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+/*Parte do menu de navegação*/
+nav {
+	position: absolute;
+	top: 2rem;
+	right: 0;
+	margin: 0 auto;
+}
+
+nav li {
+	display: inline;
+	height: 100%;
+	
+}
+
+nav a {
+    padding: 2.4rem 1rem;
+
+	text-transform: uppercase;
+	color: var(--braco);
+	font-family: calibri;
+	font-size: 1.1rem;
+	text-decoration: none;
+}
+
+nav a:hover{
+	background: var(--braco);
+	color: var(--preto);
+}
+
+/*Cria o Menu Mobile*/
+.menu-mobile{
+	display: none;
+	cursor: pointer;
+}
+
+.menu-mobile div {
+	width: 32px;
+	height: 2px;
+	background: var(--braco);
+	margin: 8px;
+}
+
+/*Parte dos baners genéricos*/
+
+.banner{
+	width: 100%;
+	height: 25rem;
+	margin-bottom: 4rem;
+
+    color: var(--braco);
+	background: var(--preto);
+	box-shadow: 0px 0px 5px var(--preto);
+	text-align: center;
+}
+
+/*Texto dos baners*/
+.banner h2{
+	text-transform: uppercase;
+	color: var(--braco);
+    font-family: 'Work Sans',sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 200px;
+}
+/*Estilo geral dos creditos das imagens*/
+figcaption{
+	font-size: 0.9rem;
+	text-size-adjust: auto;
+}
+
+/*Estilo geral dos botoes*/
+.botao{
+	margin-top: 30px;
+	background: var(--primaria);
+	color: var(--braco);
+    padding: 20px 50px 15px 50px;
+    border-radius: 5px;
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s;
+	text-decoration: none;
+}
+
+.botao:hover {
+	background: var(--braco);
+	color: var(--primaria);
+	border: 1px solid var(--primaria);
+}
+
+/*EStilo dos textos em destaque*/
+h2{
+	text-align: center;
+
+	text-transform: uppercase;
+	color: var(--primaria-escuro);
+    font-family: 'Work Sans',sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Parte do Footer */
+
+.informacoes-footer {
+	/*Flex box*/
+	display: flex;
+	justify-content: center;
+    align-items: center;
+
+	height: 25rem;
+
+	background: var(--footer);
+	box-shadow: 0px 0px 5px var(--preto);
+}
+
+.telefone-contato{
+	text-decoration: none;
+}
+
+.footer-fale-conosco, .footer-logo, .footer-siganos{
+	margin: 5rem;
+	text-align: center;
+}
+
+.footer-siganos img{
+	width: 2rem;
+	height: 2rem;
+	margin: 1rem;
+}
+
+.footer-fale-conosco img{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.copyright{
+	margin-top: 1rem;
+	color: var(--preto);
+}
+
+footer h2{
+	color: var(--braco);
+}
+
+footer h3{
+	vertical-align: text-bottom;
+
+	font-size: 1.5rem;
+	font-family: calibri;
+	text-align: center;
+	color: var(--braco);
+}
+
+footer p {
+	margin-bottom: 2rem;
+	margin-left: 0;
+	margin-right: 0;
+	vertical-align: text-bottom;
+
+	font-size: 1.1rem;
+	font-family: calibri;
+	text-align: center;
+	color: var(--braco);
+	
+}
+
+/*adptação para tablet*/
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	.menu{
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+	
+	.logo{
+		align-items: center;
+	}
+
+	nav{
+		position: relative;
+		top: 0;
+	}
+
+	nav a{
+		padding: 1.4rem 1rem;
+	}
+
+	.footer-fale-conosco, .footer-logo, .footer-siganos {
+		margin: auto;
+	}
+
+}
+
+/*adptação para mobile*/
+
+@media screen and (max-width: 480px){
+
+	body{
+		
+		overflow-x: hidden; /*Ignora tudo que estão fora da tela*/
+	}
+
+	header{
+		width: auto;
+	}
+
+	.menu{
+		width: auto;
+	}
+
+	.menu-mobile{
+		display: block;
+	}
+
+	.link-menu {
+		/*flex box*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		position: absolute;
+		height: auto;
+		width: auto;
+		top: 4.15rem;
+		right: 0;
+		background: var(--primaria);
+		transform: translateX(100%); /*Atributo que afasta em 100% no eixo X (Para ficar escondido)*/
+		animation: ease-in;
+	}
+
+	/*Atributo que caso o menu receba o click no JS volta o volta o menu a posição inicial*/
+	.link-menu.ativo {
+		transform: translateX(0);
+	}
+
+	nav{
+		top: 1.4rem;
+	}
+
+	nav a{
+		padding: 2rem 9rem;
+	}
+
+	nav a:hover {
+		/*Não está com variavel pq está com transparencia*/
+		background:#09519e81;
+	}
+
+	.link-menu li{
+		width: 100%;
+		padding: 2rem 0;
+		text-align: center;
+		border-top: 1px solid  var(--bege) ;
+	}
+
+	
+	.banner{
+		margin: 0 0 20px 0;
+	}
+
+	h2{
+		margin: 0;
+		padding: 0;
+	}
+
+
+	/*Footer*/
+	.informacoes-footer{
+		height: auto;
+		flex-direction: column
+	}
+
+}
+
+
+

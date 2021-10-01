@@ -1,0 +1,108 @@
+/* Parte da tabela que recebe os atributos do cardapio*/
+table {
+	margin: 4rem 4rem 0px;
+	width: 90%;
+}
+
+td{
+	vertical-align: top;
+	padding: 4rem;	
+}
+
+tr{
+	border-bottom: 1px solid #00000042;
+}
+
+/*Retira a lina do Titulo pra não ficar 2 linhas juntas*/
+.linha-titulo{
+	border-bottom: 0px solid var(--preto);
+}
+
+/*Parte da imagem do cardápio*/
+.cardapio img{
+	width: 22rem;
+	height: 22rem;
+	border-radius: 5px;
+	display: block;
+	margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.cardapio img:hover {
+	transform: scale(1.2);
+}
+
+/*Parte do Título*/
+.titulo{
+	padding-top: 4rem;
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: #091e42;
+    font-family: 'Work Sans',sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+ 
+}
+
+/*Atributo que deixa em negrito*/
+strong{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.cardapio p{
+
+	color: var(--cinza);
+	font-family: 'Work Sans',sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    display: block;
+    margin-top: 1.6rem;
+}
+/*adptação para tablet*/
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	table{
+		margin: auto 2rem 2rem 2rem;
+	}
+
+	tr{
+		display: block;
+		padding: auto;
+		margin: auto;
+	}
+
+	td{
+		display: block;
+		padding: 0;
+	}
+
+	.cardapio img{
+		float: left;
+		margin: 0 2rem 0 0;
+	}
+}
+
+
+/*adptação para mobile*/
+
+@media screen and (max-width: 480px){
+
+	td{
+		display: block;
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
+
+	table{
+		width: 100%;
+		margin: 0;
+	}
+
+	.cardapio p {
+		margin: 20px 20px 0 10px;
+	}
+}
